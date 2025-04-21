@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>最警告的一集⚡⚡⚡</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            color: white;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        img {
+            width: 300px;
+            height: auto;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            var confirmed = confirm("oioioi！小子!有點火熱啊?(哥們因為現在是夏天)）");
+            if (confirmed) {
+                alert("好勒～哥們慢走OWOb");
+                // 自動輪播圖片
+                var images = [
+                    "/mnt/data/97d286d8-853e-4a87-8448-32853a421b02.png",
+                    "/mnt/data/ed9c8e01-6851-43ea-a894-0b7bcc9f9c53.png",
+                    "/mnt/data/f8c16a4d-ca70-4fa4-830f-64b8e1527154.png"
+                ];
+                var imgElement = document.getElementById("funnyImage");
+                var index = 0;
+                setInterval(function() {
+                    imgElement.src = images[index];
+                    index = (index + 1) % images.length;
+                }, 200); // 每200毫秒切換一次
+                // 3秒後自動跳轉
+                setTimeout(function() {
+                    window.location.href = "https://youtube.com/clip/UgkxASANTEVLlrSex0gtL1I1_Msfi7vWjHPf?si=JjezKaeFcc4_EjsN";
+                }, 3000);
+            } else {
+                alert("拜託看一下，哥們");
+            }
+        };
+    </script>
+</head>
+<body>
+    <img id="funnyImage" src="" alt="...">
+    <h2>正在植入病毒中...</h2>
+</body>
+</html>
